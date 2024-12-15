@@ -1,5 +1,5 @@
-transformers
-scikit-learn
 streamlit
-tensorflow
-karas==2.11.0
+pandas
+scikit-learn
+sentence-transformers
+transformers
