@@ -1,4 +1,4 @@
-transformers==4.12.3
+sentence-transformer
 streamlit
 tensorflow
 torch
