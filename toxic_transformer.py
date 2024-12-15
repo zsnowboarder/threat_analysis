@@ -17,11 +17,11 @@ classifier = pipeline('text-classification', model='unitary/toxic-bert')
 # In[18]:
 
 
-st.title("Threat/Behaviour Detection")
+st.title("Behaviour Detection")
 st.write("")
 st.write("""This exercise uses a combination of supervised and unsupervised approaches to analyze the intensity of threat.
 Supervised learning is applied first to classify the toxicity of the text using a pre-trained BERT model (unitary/toxic-bert), then
-unsupervised learning is applied to identify the outliers of the toxicity score using Isolation Forest algorithm.""")
+unsupervised learning is applied to identify the outliers of the toxicity score amoung the entries in the dataset using Isolation Forest algorithm.""")
 
 # load data
 data = pd.read_excel("data.xlsx")
@@ -54,8 +54,8 @@ if st.button("Analyze"):
     data["analysis"] = data["analysis"].map({-1:"Unusual", 1:""})
     data = data.drop(columns=["score"])
     st.table(data)
-
-
+    st.write("""Building on this concept, in theory, a new approach can be developed to monitor real time calls for anomalies.
+    prioritizing those that require immediate response.""")
 
 # In[ ]:
 
