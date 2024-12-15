@@ -2,3 +2,4 @@ transformers
 pandas
 streamlit
 scikit-learn
+tensorflow
