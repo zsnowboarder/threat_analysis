@@ -23,7 +23,7 @@ st.write("""This excercise uses a combination of supervised and unsupervised app
 classify the toxicity of the text, then unsupervised learning is applied to identify the outliers of the toxicity score.""")
 
 # load data
-data = pd.read_excel("data.xlsx")
+data = pd.read_excel("/mount/src/threat_analysis/data.xlsx")
 
 #new_text = {"text": "EDP called and told police that he is going to get a gun and shoot people. Police search the area and apprehended EDP to hospital."}
 
