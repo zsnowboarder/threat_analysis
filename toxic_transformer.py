@@ -20,7 +20,7 @@ st.write("")
 st.write("""This exercise uses a combination of supervised and unsupervised approaches to analyze the intensity of threat.
 Supervised learning is applied first to classify the toxicity of the text using a pre-trained BERT model (unitary/toxic-bert), then
 unsupervised learning is applied to identify the outliers of the toxicity score amoung the entries in the dataset using Isolation Forest algorithm.
-This model understands the sematic of the language.
+This model understands the sematics of the language.
 <br>For example:<br>
 EDP got a gun and gave it to his friend as a present so that he can kill someone.<br>
 vs<br>
