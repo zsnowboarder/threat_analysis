@@ -18,7 +18,8 @@ classifier = pipeline('text-classification', model='unitary/toxic-bert')
 st.title("Behaviour Detection")
 st.write("")
 st.write("""This exercise uses a combination of supervised and unsupervised approaches to analyze the intensity of threat.
-Supervised learning is applied first to classify the toxicity of the text using a pre-trained BERT model (unitary/toxic-bert), then
+Supervised learning is applied first to classify the toxicity of the text using a pre-trained BERT model specifically unitary/toxic-bert that has
+been validated by research (Chakraverty etc., 2024), then
 unsupervised learning is applied to identify the outliers of the toxicity score amoung the entries in the dataset using Isolation Forest algorithm.
 This model understands the sematics of the language.
 <br>For example:<br>
